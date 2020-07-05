@@ -1,0 +1,70 @@
+<form class="card">
+    <div class="card-header bg-secondary text-white">
+        <h5 class="mb-0"><i class="fas fa-users fa-lg mr-2"></i>Usuários</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+                <div class="form-group">
+                    <button id="btnNew" class="btn btn-success" [routerLink]="'/user'">Novo</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <div class="card">
+                        <div class="card-header">
+                            Filtros
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+                                    <div class="form-group">
+                                        <label for="txtNome">Nome</label>
+                                        <input id="txtNome" class="form-control" type="text" maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-2 col-md-3 col-lg-2">
+                                    <div class="form-group">
+                                        <label for="txtCPF">CPF</label>
+                                        <input id="txtCPF" class="form-control" type="text" placeholder="000.000.000-00">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+                                    <div class="form-group">
+                                        <label for="txtEmail">E-mail</label>
+                                        <input id="txtEmail" class="form-control" type="text" maxlength="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button id="btnClear" class="btn btn-outline-secondary" type="button">Limpar</button>
+                                    <button btn="btnSearch" class="btn btn-success ml-2" type="button" (click)="search()">
+                                        Pesquisar
+                                        <i class="fas fa-search ml-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <div class="card">
+                        <div class="card-header">
+                            Registros
+                        </div>
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
