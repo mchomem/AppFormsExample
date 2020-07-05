@@ -6,14 +6,14 @@
         <div class="row">
             <div class="col-12 col-sm-4 col-md-4 col-lg-3">
                 <div class="form-group">
-                    <label for="txtNome">Nome<span class="ml-2 text-danger">*</span></label>
-                    <input id="txtNome" class="form-control" type="text" maxlength="100">
+                    <label for="txtName">Nome<span class="ml-2 text-danger">*</span></label>
+                    <input id="txtName" class="form-control" type="text" maxlength="100">
                 </div>
             </div>
             <div class="col-12 col-sm-2 col-md-3 col-lg-2">
                 <div class="form-group">
-                    <label for="txtCPF">CPF<span class="ml-2 text-danger">*</span></label>
-                    <input id="txtCPF" class="form-control" type="text" placeholder="000.000.000-00">
+                    <label for="txtSSA">CPF<span class="ml-2 text-danger">*</span></label>
+                    <input id="txtSSA" class="form-control" type="text" placeholder="000.000.000-00">
                 </div>
             </div>
             <div class="col-12 col-sm-4 col-md-4 col-lg-3">
@@ -26,43 +26,43 @@
         <div class="row">
             <div class="col-12 col-sm-3 col-md-4 col-lg-2">
                 <div class="form-group">
-                    <label for="selPapelUsuario">Papel usuário<span class="ml-2 text-danger">*</span></label>
-                    <select id="selPapelUsuario" class="form-control"></select>
+                    <label for="selUserRole">Papel usuário<span class="ml-2 text-danger">*</span></label>
+                    <select id="selUserRole" class="form-control"></select>
                 </div>
             </div>
             <div class="col-12 col-sm-4 col-md-7 col-lg-6">
                 <div class="form-group">
-                    <label for="selEmpresa">Empresa<span class="ml-2 text-danger">*</span></label>
-                    <select id="selEmpresa" class="form-control"></select>
+                    <label for="selcompany">Empresa<span class="ml-2 text-danger">*</span></label>
+                    <select id="selcompany" class="form-control"></select>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-sm-2 col-md-3 col-lg-2">
                 <div class="form-group">
-                    <label for="txtTelefone">Telefone<span class="ml-2 text-danger">*</span></label>
-                    <input id="txtTelefone" class="form-control" type="text" placeholder="(00) 000000000">
+                    <label for="txtTelephone">Telefone<span class="ml-2 text-danger">*</span></label>
+                    <input id="txtTelephone" class="form-control" type="text" placeholder="(00) 000000000">
                 </div>
             </div>
             <div class="col-12 col-sm-2 col-md-2 col-lg-2">
                 <div class="form-group">
-                    <label for="txtRamal">Ramal</label>
-                    <input id="txtRamal" class="form-control" type="text" maxlength="9">
+                    <label for="txtTelephoneExtension">Ramal</label>
+                    <input id="txtTelephoneExtension" class="form-control" type="text" maxlength="9">
                 </div>
             </div>
             <div class="col-12 col-sm-2 col-md-3 col-lg-3">
                 <div class="form-group">
                     <div class="custom-control custom-checkbox">
-                        <input id="chkAtivo" type="checkbox" class="custom-control-input">
-                        <label class="custom-control-label" for="chkAtivo">Ativo</label>
+                        <input id="chkActive" type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label" for="chkActive">Ativo</label>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input id="chkPendente" type="checkbox" class="custom-control-input">
-                        <label class="custom-control-label" for="chkPendente">Pendente</label>
+                        <input id="chkPending" type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label" for="chkPending">Pendente</label>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input id="chkBloqueado" type="checkbox" class="custom-control-input">
-                        <label class="custom-control-label" for="chkBloqueado">Bloqueado</label>
+                        <input id="chkBlocked" type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label" for="chkBlocked">Bloqueado</label>
                     </div>
                 </div>
             </div>
@@ -76,9 +76,9 @@
             </div>
             <div class="col-12 col-sm-3 col-md-4 col-lg-2">
                 <div class="form-group">
-                    <label for="txtSenha">Senha<span class="ml-2 text-danger">*</span></label>
+                    <label for="txtPassword">Senha<span class="ml-2 text-danger">*</span></label>
                     <div class="input-group">
-                        <input id="txtSenha" class="form-control" type="password" autocomplete="off" maxlength="100">
+                        <input id="txtPassword" class="form-control" type="password" autocomplete="off" maxlength="100">
                         <div class="input-group-append">
                             <button id="btnSeePassword" class="btn btn-secondary" type="button" see="false"
                                 style="width: 50px;">
@@ -93,8 +93,8 @@
     <div class="card-footer">
         <div class="row">
             <div class="col">
-                <button id="btnCancelar" class="btn btn-outline-secondary" type="button" [routerLink]="'/user-list'">Cancelar</button>
-                <button id="btnSalvar" class="btn btn-success ml-2" type="button" (click)="save()">Salvar</button>
+                <button id="btnCancel" class="btn btn-outline-secondary" type="button" [routerLink]="'/user-list'">Cancelar</button>
+                <button id="btnSave" class="btn btn-success ml-2" type="button" (click)="save()">Salvar</button>
             </div>
         </div>
     </div>
